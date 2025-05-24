@@ -130,7 +130,7 @@ h1
   }
 }
 
-@media (max-width: 7in) or (max-width: 800px)
+@media screen and ((max-width: 7in) or (max-width: 800px))
 {
   h1
   {
