@@ -1,0 +1,53 @@
+.Bookmark
+{
+  position: fixed;
+  width: 200px;
+  height: 260px;
+  background-color: rgb(50, 50, 50);
+  z-index: 100;
+  top: 0;
+  right: 50px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0% 100%, 0 51%, 0% 0%);
+  transform: translateY(-250px);
+  transition: all 1s;
+  padding-top: 40px;
+}
+
+.Bookmark:hover
+{
+  transform: translateY(0);
+  animation: pull 1s;
+}
+
+@keyframes pull
+{
+  0%
+  {
+    clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0% 100%, 0 51%, 0% 0%);
+  }
+  60%
+  {
+    clip-path: polygon(100% 0, 100% 90%, 50% 95%, 0% 90%, 0 51%, 0% 0%);
+  }
+  100%
+  {
+    clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0% 100%, 0 51%, 0% 0%);
+  }
+}
+
+.Bookmark a::before
+{
+  content: "\2022 ";
+  margin-right: 10px;
+}
+
+.Bookmark a
+{
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-family: Roboto;
+}
