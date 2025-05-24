@@ -1,0 +1,143 @@
+.Profile
+{
+  width: 99.8%;
+  height: 70vh;
+  background-color: yellow;
+  position: relative;
+}
+
+h1
+{
+  font-size: 2rem;
+  color: var(--textColor);
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.Profile img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#profileBar
+{
+  background-image: linear-gradient(transparent, var(--defaultColor));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 125px;
+  /* background-color: purple; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profileContainer
+{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  position: relative;
+}
+
+.profileContainer p
+{
+  display: inline-block;
+  font-family: Roboto;
+
+  font-size: 190%;
+  font-weight: bold;
+
+  margin: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+
+  padding-left: 20px;
+
+  transition: all 0.5s;
+
+}
+
+.profileCircle
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 150px;
+  aspect-ratio: 1/1;
+  background-color: var(--defaultColor);
+}
+
+.profileCircle img
+{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.Socials
+{
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.Socials div
+{
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--defaultColor);
+  width: 100px;
+  height: 100px;
+  margin: 0 2%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.Socials div img
+{
+  object-position: center;
+  width: 90%;
+  height: 90%;
+  transition: transform 0.5s;
+}
+
+#Youtube
+{
+  width: 70%;
+  height: 70%;
+  
+}
+
+#Kofi
+{
+  width: 80%;
+  height: 80%;
+}
+
+.Socials div:hover
+{
+  background-color: var(--hoverColor);
+  transform: translateY(-10px);
+  img
+  {
+    transform: rotateZ(15deg);
+  }
+}
+
+@media only screen and (max-width: 980px)
+{
+  h1
+  {
+    margin-top: 150px;
+  }
+  #profileBar {grid-template-columns: 1fr;}
+  .profileCircle {top: 0;}
+  .Socials {justify-content: space-around;}
+  .projectCards{height: 100vh;}
+}
