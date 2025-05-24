@@ -7,8 +7,8 @@
   width: 90%;
   height: 100%;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
   perspective: 1000px;
 }
@@ -27,7 +27,7 @@
   color: white;
   text-align: center;
   font-size: 30px;
-  min-width: 300px;
+  min-width: 430px;
 }
  
 .projectCards .Card::before
@@ -56,4 +56,12 @@
   bottom: 0;
   opacity: 1;
   height: 100%;
+}
+
+@media screen and (max-width: 1000px)
+{
+  .projectCards
+  {
+    grid-template-columns: 1fr;
+  }
 }
