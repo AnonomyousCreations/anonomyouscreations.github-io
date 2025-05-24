@@ -1,0 +1,135 @@
+#CatContainer
+{
+  width: 50vw;
+  height: 35vh;
+  position: fixed;
+  bottom: -20px;
+  left: 0;
+  z-index: 100;
+  pointer-events: none;
+  transform: translateY(60px);
+}
+
+.CatEnter
+{
+  animation: enter 2s forwards;
+}
+
+.CatExit
+{
+  animation: enter 2s 1s reverse forwards;
+}
+
+@keyframes enter
+{
+  0%
+  {
+    transform: translateY(60px);
+  }
+  100%
+  {
+    transform: translateY(0);
+  }
+}
+
+@keyframes catEnter
+{
+  0%
+  {
+    transform: rotateZ(0);
+  }
+  50%
+  {
+    transform: rotateZ(-5deg);
+  }
+}
+
+#Cat
+{
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 80px;
+  height: 80px;
+  animation: catEnter 2s 5s;
+}
+
+#Bubble
+{
+  padding-left: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 80px;
+  transform: translateY(50px);
+  opacity: 0;
+
+  /* opacity: 0; */
+}
+
+.BubbleEnter
+{
+  animation: BubbleEnter 1s 1s forwards normal;
+}
+
+.BubbleExit
+{
+  animation: BubbleEnter 1s 1s backwards reverse;
+}
+
+@keyframes BubbleEnter
+{
+  0%
+  {
+    transform: translateY(50px);
+  }
+  100%
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#BubbleTail
+{
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  width: 25px;
+  height: 10px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: white;
+}
+
+#BubbleText
+{
+  min-width: 30px;
+  min-height: 20px;
+  position: absolute;
+  bottom: 20px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  font-style: Roboto;
+}
+
+#BubbleText.Blink::after
+{
+  content: "";
+  border-left: solid 8px rgb(255, 100, 100);
+  margin-left: 2px;
+  animation: blink 0.2s alternate infinite;
+}
+
+@keyframes blink
+{
+  0%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0.1;
+  }
+}

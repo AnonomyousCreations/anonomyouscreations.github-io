@@ -1,0 +1,26 @@
+.DropDown
+{
+  display: inline-block;
+  transition: all 0.5s;
+  margin-left: 10px;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.Drop
+{
+  margin-left: 70px;
+}
+
+.DropDownText
+{
+  color: var(--dimTextColor);
+  margin: 0;
+  margin-left: 3px;
+  max-height: 0;
+  transition: max-height 1s;
+  overflow: hidden;
+  border-left: white solid 2px;
+  padding-left: 15px;
+}

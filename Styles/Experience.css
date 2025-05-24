@@ -1,0 +1,50 @@
+.Experience-Container
+{
+  margin-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flexbox;
+  align-content: center;
+  box-shadow: 10px 0px 10px 5px rgba(20, 20, 20, 0.5) inset;
+}
+
+.Experience-Container::-webkit-scrollbar
+{
+  background-color: transparent;
+  height: 10px;
+}
+
+.Experience-Container::-webkit-scrollbar-thumb
+{
+  background: white;
+  border-radius: 10px;
+}
+
+.ExperienceNode
+{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+.LogoDisplay
+{
+  /* filter: invert(100%) sepia(0%) saturate(7467%) hue-rotate(55deg) brightness(100%) contrast(97%); */
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+.ExperienceText
+{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 10%;
+}

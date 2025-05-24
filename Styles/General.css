@@ -1,0 +1,98 @@
+:root{
+  --barColor: rgb(20, 20, 20);
+  --defaultColor: rgb(25, 25, 25);
+  --hoverColor: rgba(30, 30, 30, 0.8);
+  --textColor: white;
+  --dimTextColor: rgb(200, 200, 200);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 600px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--defaultColor);
+}
+
+p
+{
+  color: var(--textColor);
+}
+
+p.subtext
+{
+  color: var(--dimTextColor);
+  margin-left: 60px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.ListText::before
+{
+  content: "\2022 ";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.Covered
+{
+  background-image: linear-gradient(white, white);
+  background-size: 500px 15px;
+  background-repeat: no-repeat;
+  background-position: 0 80%;
+  transition: all 0.5s;
+}
+
+.Covered:hover
+{
+  background-position: 250px 80%;
+}
+
+.ListText
+{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: var(--textColor);
+  display: inline-block;
+}
+
+.hoverText
+{
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  transition: all 1s;
+}
+
+.hoverText::after
+{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: all 1s;
+}
+
+.hoverText:hover
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: translateY(-10px);
+  font-size: 20px;
+}
+
+
+.hoverText:hover::after
+{
+
+    width: 100%;
+    transform: translateY(-10px);
+}
+
