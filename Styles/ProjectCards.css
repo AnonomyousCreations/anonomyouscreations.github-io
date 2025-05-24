@@ -57,7 +57,7 @@
   height: 100%;
 }
 
-@media screen and ((max-width: 7in) or (max-width: 700px))
+@media only screen and (max-width: 980px)
 {
   .projectCards
   {
