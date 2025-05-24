@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+
+    <link rel="icon" href="../Assets/Icon.png">
+
+    <link rel="stylesheet" href="../Styles/Profile.css">
+    <link rel="stylesheet" href="../Styles/General.css">
+    <link rel="stylesheet" href="../Styles/ProjectCards.css">
+    <link rel="stylesheet" href = "../Styles/Bookmark.css">
+    <link rel="stylesheet" href="../Styles/CatAssistant.css">
+    <link rel="stylesheet" href="../Styles/Experience.css">
+    <link rel="stylesheet" href="../Styles/DropDown.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    
+  </head>
+
+  <body>
+
+    <audio controls autoplay loop id = "Ambience" preload="auto" style="display: none;">
+      <source src = "../Assets/WindAmbience.mp3" type = "audio/mpeg">
+    </audio>
+
+    <div class ="Bookmark">
+      <a href="#Introduction"><u>Introduction</u></a>
+      <a href = "#Projects"><u>Projects</u></a>
+      <a href="#Experience"><u>Experience</u></a>
+    </div>
+
+    <div id = "CatContainer">
+      <img src="../Assets/CatAssistant.png" id = "Cat">
+
+      <div id = "Bubble">
+        <div id = "BubbleTail"></div>
+        <div id = "BubbleText" class="Blink"></div>
+      </div>
+
+    </div>
+
+    <div class="Profile">
+
+      <img src="../Assets/pixel art golden forest GIF.gif" alt="">
+
+      <div id="profileBar">
+
+        <div class="profileContainer">
+          <div class="profileCircle">
+            <img src="../Assets/ProfilePicture.png" alt="">
+          </div>
+          <p id = "Name">TheUnknownPerson_</p>
+        </div>
+        
+        <div class="Socials">
+          <a><div><img src="../Assets/YoutubeLogo.png" alt = "" id = "Youtube"></div></a>
+          <a href = "https://www.instagram.com/theunknown1dev/"><div><img src="../Assets/InstagramLogo.png" alt=""></div></a>
+          <a href = "https://ko-fi.com/anonomyousanimations#"><div><img src="../Assets/KofiLogo.png" alt = "" id = "Kofi"></div></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="Top Text">
+
+      <h1 id = "Introduction">Hey There!</h1>
+      <p class="subtext">
+        I am a <span class = "hoverText">Software Engineer</span> with <em>several years of experience</em> in many fields. <br>
+        My journey began back in 2018 with <span class = "hoverText">Game Development</span> <br>
+        I had fell in love with game development and eventually pursued it for <span class = "hoverText">7 long years.</span> <br>
+        Since then I have expanded outwards into fields such as:
+      </p>
+
+      <div class="Drop">
+        <p class="ListText Covered">Mobile Development <span class="DropDown">></span> </p>
+        <p class="DropDownText"> 
+          <em>Mobile Development.</em> I <em>love</em> Mobile Development. <br>
+          My Mobile Development tools are <strong>React Native</strong> and <strong>Expo</strong> <br>
+          I have also dabbled in small mobile development with <strong>Python</strong> using <strong>Kivy</strong>.
+        </p>
+      </div>
+      
+      <div class="Drop">
+        <p class="ListText Covered">Application Development <span class="DropDown">></span> </p>
+        <p class="DropDownText">
+          When it comes to Application Development, I do not have much. <br>
+          I started Application Development with <strong>C++</strong>. <br>
+          <strong>C++</strong> has been one of my <em>most</em> difficult experiences <br>
+          despite having experience in closely related languages (C#). <br>
+          Regardless of that I have managed to make <strong>astounding growth</strong> and now feel confident with <strong>C++</strong>.
+        </p>
+      </div>
+
+      <div class="Drop">
+        <p class="ListText Covered">Web Development <span class="DropDown">></span> </p>
+        <p class="DropDownText">
+          You are looking at one of my <em>favorite</em> projects! <br>
+          Though I don't have much experience in Web Development <br> <em>my growth has been exponential.</em> <br>
+          I have dabbled in things regarding App Development using <strong>React Native</strong>. <br>
+          <strong>JavaScript</strong> feels very native to me due to it's similarities with <strong>Lua</strong>.
+        </p>
+      </div>
+
+      <p class="subtext">
+        <strong>
+          Despite my experience in other fields I specialize in Game Development. <br>
+          Other fields listed, though having experience in them, I lack presentation.
+        </strong>
+      </p>
+      <!-- <span class="ListText Covered">Mobile development<span class="DropDown">></span></span> <br>
+      <span class="DropDownText" style = "opacity: 0; display: inline-block; height: 0; overflow: hidden; padding: 0;"></span> <br>
+      <span class="ListText Covered">Application development<span class="DropDown">></span></span> <br>
+      <span class="ListText Covered">Web development<span class="DropDown">></span></span> <br> -->
+    </div>
+
+    <h1 id = "Projects">Projects</h1>
+
+    <div class = "projectCards">
+      <div class = "Card">Placeholder</div>
+      <div class = "Card">Placeholder</div>
+      <div class = "Card">Placeholder</div>
+    </div>
+
+    <h1 id = "Experience">Experience</h1>
+
+    <div class = "Experience-Container">
+     
+     <div class="ExperienceNode">
+        <img src="../Assets/LuaLogo.svg" alt="" class="LogoDisplay">
+        <p class = "ExperienceText">7 Years</p>
+      </div>
+      <div class="ExperienceNode">
+        <img src="../Assets/JavaScriptLogo.svg" alt="" class="LogoDisplay">
+        <p class = "ExperienceText">4 Months</p>
+      </div>
+      <div class="ExperienceNode">
+        <img src="../Assets/HTMLLogo.svg" alt="" class="LogoDisplay">
+        <p class = "ExperienceText">4 Months</p>
+      </div>
+      <div class="ExperienceNode">
+        <img src="../Assets/CSSLogo.svg" alt="" class="LogoDisplay">
+        <p class = "ExperienceText">4 Months</p>
+      </div>
+       <div class="ExperienceNode">
+        <img src="../Assets/C++Logo.svg" alt="" class="LogoDisplay">
+        <p class = "ExperienceText">2 Months</p>
+      </div>
+    </div>
+
+    <script src="../Scripts/NameTransform.js" defer>
+      const Ambience = document.getElementById("Ambience")
+      Ambience.volume = 0.01;
+      Ambience.play();
+    </script>
+
+    <script src = "../Scripts/Spoiler.js" defer></script>
+    <script src = "../Scripts/CatAssistant.js"></script>
+    <script src = "../Scripts/IntroTransform.js"></script>
+    <script src = "../Scripts/ProjectsTransform.js"></script>
+    <script src= "../Scripts/DropDown.js"></script>
+    
+  </body>
+
+</html>
