@@ -7,8 +7,8 @@
   width: 90%;
   height: 100%;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 
   perspective: 1000px;
 }
@@ -58,10 +58,10 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1000px)
+@media (min-width: 800px)
 {
   .projectCards
   {
-    grid-template-columns: 1fr;
+    flex-direction: row;
   }
 }
