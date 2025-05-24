@@ -8,7 +8,7 @@
   height: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   perspective: 1000px;
 }
@@ -27,7 +27,6 @@
   color: white;
   text-align: center;
   font-size: 30px;
-  min-width: 430px;
 }
  
 .projectCards .Card::before
@@ -58,10 +57,10 @@
   height: 100%;
 }
 
-@media (min-width: 800px)
+@media (max-width: 7in) or (max-width: 700px)
 {
   .projectCards
   {
-    flex-direction: row;
+    flex-direction: column;
   }
 }

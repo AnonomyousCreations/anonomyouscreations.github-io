@@ -130,7 +130,7 @@ h1
   }
 }
 
-@media (min-resolution: 2dppx) or (max-width: 800px)
+@media (max-width: 7in) or (max-width: 800px)
 {
   h1
   {
